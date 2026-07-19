@@ -1,0 +1,11 @@
+# Robots.txt for Saurav Sharma, Advocate
+# PLACEHOLDER DOMAIN: Replace with your real domain before going live
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update with real domain)
+Sitemap: https://www.sauravsharmadvocate.com/sitemap.xml
+
+# Disallow admin or private paths (add as needed)
+# Disallow: /admin/
