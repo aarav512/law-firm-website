@@ -13,17 +13,45 @@
     <!-- Add your Google Search Console verification code here -->
     <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_HERE">
 
+    <!-- Favicon & Apple Touch Icons (SVG data-URI monogram) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A1628'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%23C9A84C' font-family='serif'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A1628'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%23C9A84C' font-family='serif'%3ES%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#0A1628">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Saurav Sharma, Advocate | Trusted Legal Counsel">
     <meta property="og:description" content="Strategic legal representation for individuals and businesses. Corporate Law, Civil Litigation, Criminal Law, RERA, NCLT, and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.sauravsharmadvocate.com/">
     <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Saurav Sharma, Advocate">
+    <meta property="og:image" content="https://www.sauravsharmadvocate.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Saurav Sharma, Advocate - Delhi High Court">
 
-    <!-- Preconnect Google Fonts -->
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Saurav Sharma, Advocate | Trusted Legal Counsel">
+    <meta name="twitter:description" content="Strategic legal representation for individuals and businesses. Corporate Law, Civil Litigation, Criminal Law, RERA, NCLT, and more.">
+    <meta name="twitter:image" content="https://www.sauravsharmadvocate.com/og-image.jpg">
+    <meta name="twitter:image:alt" content="Saurav Sharma, Advocate - Delhi High Court">
+
+    <!-- Preconnect Google Fonts (preload key requests) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics 4 (placeholder) — replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+    </script>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -48,7 +76,7 @@
             "https://www.linkedin.com/in/saurav-sharma-advocate",
             "https://www.sauravsharmadvocate.com/#legal-insights"
         ],
-        "priceRange": "$$",
+        "priceRange": "$",
         "areaServed": {
             "@type": "Country",
             "name": "India"
@@ -69,6 +97,20 @@
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "MSME & Commercial Suits"}},
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Arbitration"}}
             ]
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Saurav Sharma, Advocate",
+        "url": "https://www.sauravsharmadvocate.com",
+        "inLanguage": "en-IN",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.sauravsharmadvocate.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
     }
     </script>
@@ -1246,6 +1288,32 @@
 </head>
 <body>
 
+    <!-- ===== DISCLAIMER MODAL (first visit, 30-day localStorage) ===== -->
+    <div id="disclaimerOverlay" class="disclaimer-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle" aria-hidden="true">
+        <div class="disclaimer-card">
+            <div class="disclaimer-logo" aria-hidden="true">
+                <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="20" fill="#0A1628"/>
+                    <text x="50" y="68" font-size="54" text-anchor="middle" fill="#C9A84C" font-family="serif">S</text>
+                </svg>
+            </div>
+            <h2 id="disclaimerTitle" class="disclaimer-firm">SAURAV SHARMA <span>&amp;</span> ASSOCIATES</h2>
+            <p class="disclaimer-tagline">Lawyers &amp; Solicitors</p>
+            <div class="disclaimer-body" tabindex="0">
+                <p>In accordance with the rules of the Bar Council of India, advocates are prohibited from advertising or soliciting legal work in any manner.</p>
+                <p>By accessing this website, you acknowledge that you are seeking information relating to Saurav Sharma &amp; Associates &ndash; Lawyers &amp; Solicitors entirely on your own initiative. There has been no solicitation, advertisement, invitation, or inducement by the Firm or any of its members.</p>
+                <p>The information contained on this website is provided solely for general informational purposes and should not be construed as legal advice or legal opinion. Viewing this website, contacting the Firm, or submitting an enquiry does not create an Advocate&ndash;Client relationship.</p>
+                <p>The Firm disclaims all liability for any reliance placed upon the information contained on this website. Users should obtain independent legal advice before acting upon any information available herein.</p>
+                <p>All content, including text, graphics, logos, images, publications, and other material, is the exclusive intellectual property of Saurav Sharma &amp; Associates &ndash; Lawyers &amp; Solicitors and may not be reproduced without prior written permission.</p>
+            </div>
+            <label class="disclaimer-check">
+                <input type="checkbox" id="disclaimerAgree">
+                <span>I have read, understood, and agree to the above Disclaimer.</span>
+            </label>
+            <button type="button" id="disclaimerProceed" class="disclaimer-proceed" disabled>Proceed to Website</button>
+        </div>
+    </div>
+
     <!-- ===== HEADER / NAVIGATION ===== -->
     <header class="header" id="header">
         <div class="container header-inner">
@@ -1254,6 +1322,7 @@
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="team.html">Our Team</a></li>
                     <li><a href="#practice">Practice Areas</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#faq">FAQ</a></li>
@@ -1284,6 +1353,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="team.html">Our Team</a>
         <a href="#practice">Practice Areas</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#faq">FAQ</a>
@@ -1789,6 +1859,7 @@
                         </div>
                         <div class="contact-map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.5234!2d77.38901!3d28.38234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc0bf4cfffff%3A0x0!2sAdore%20Exclusive%2C%20Tower%20T%2C%20Sector%2086%2C%20Faridabad%2C%20Haryana%20121004!5e0!3m2!1sen!2sin!4v1721380000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office Location - Adore Exclusive, Sector 86, Faridabad"></iframe>
+                            <noscript><p>Please enable JavaScript to view the map, or call us at +91 99990 46369 for directions.</p></noscript>
                         </div>
                         <div class="contact-social">
                             <a href="https://www.linkedin.com/in/saurav-sharma-advocate" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -1831,6 +1902,7 @@
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="team.html">Our Team</a></li>
                         <li><a href="#practice">Practice Areas</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#faq">FAQ</a></li>
@@ -1849,9 +1921,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2025 Saurav Sharma, Advocate. All Rights Reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms &amp; Conditions</a>
-                    <a href="#">Legal Disclaimer</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
+                    <a href="disclaimer.html">Legal Disclaimer</a>
                 </div>
             </div>
         </div>
@@ -1869,6 +1941,51 @@
     <script>
     (function() {
         'use strict';
+
+        // --- Disclaimer Modal (first visit, 30-day localStorage) ---
+        var DISCLAIMER_KEY = 'ssa_disclaimer_accepted';
+        var DISCLAIMER_TTL = 30 * 24 * 60 * 60 * 1000; // 30 days
+        var overlay = document.getElementById('disclaimerOverlay');
+        var agreeChk = document.getElementById('disclaimerAgree');
+        var proceedBtn = document.getElementById('disclaimerProceed');
+
+        function disclaimerAcceptedRecently() {
+            try {
+                var ts = localStorage.getItem(DISCLAIMER_KEY);
+                if (!ts) return false;
+                return (Date.now() - parseInt(ts, 10)) < DISCLAIMER_TTL;
+            } catch (e) { return false; }
+        }
+        function showDisclaimer() {
+            if (!overlay) return;
+            overlay.classList.add('active');
+            overlay.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            var focusable = overlay.querySelector('.disclaimer-body');
+            if (focusable) { setTimeout(function(){ focusable.focus(); }, 100); }
+        }
+        function hideDisclaimer() {
+            if (!overlay) return;
+            overlay.classList.remove('active');
+            overlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        if (!disclaimerAcceptedRecently()) {
+            showDisclaimer();
+        } else {
+            if (overlay) overlay.style.display = 'none';
+        }
+        if (agreeChk && proceedBtn) {
+            agreeChk.addEventListener('change', function() {
+                proceedBtn.disabled = !this.checked;
+            });
+            proceedBtn.addEventListener('click', function() {
+                if (agreeChk.checked) {
+                    try { localStorage.setItem(DISCLAIMER_KEY, String(Date.now())); } catch (e) {}
+                    hideDisclaimer();
+                }
+            });
+        }
 
         // --- Header Scroll Effect ---
         const header = document.getElementById('header');
@@ -2097,17 +2214,36 @@
             contactSuccessMsg.style.display = 'none';
             contactErrorMsg.style.display = 'none';
 
+            // Honeypot anti-spam: if hidden field is filled, silently drop
+            var honeypot = form.querySelector('input[name="_gotcha"]');
+            if (honeypot && honeypot.value) { return; }
+
+            // Rate limiting: max 1 submission per 60 seconds
+            var RATE_KEY = 'ssa_contact_last_submit';
+            var RATE_TTL = 60 * 1000;
+            try {
+                var last = parseInt(localStorage.getItem(RATE_KEY) || '0', 10);
+                if (Date.now() - last < RATE_TTL) {
+                    contactErrorMsg.style.display = 'block';
+                    contactErrorMsg.querySelector('p').textContent = 'Too many attempts. Please wait a minute and try again.';
+                    return;
+                }
+            } catch (e) {}
+
             if (!validateContactForm()) return;
 
             contactSubmitBtn.disabled = true;
             contactSubmitBtn.innerHTML = '<span style="display:inline-block;width:16px;height:16px;border:2px solid var(--primary);border-top-color:transparent;border-radius:50%;animation:spin 0.7s linear infinite;vertical-align:middle;margin-right:8px;"></span>Sending...';
 
+            // Sanitize inputs (strip angle brackets to prevent injection in email body)
+            function sanitize(str) { return String(str).replace(/[<>]/g, '').trim(); }
+
             var formData = {
-                name: document.getElementById('name').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                phone: document.getElementById('phone').value.trim(),
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value.trim(),
+                name: sanitize(document.getElementById('name').value),
+                email: sanitize(document.getElementById('email').value),
+                phone: sanitize(document.getElementById('phone').value),
+                subject: sanitize(document.getElementById('subject').value),
+                message: sanitize(document.getElementById('message').value),
                 _subject: 'New Legal Enquiry \u2013 Saurav Sharma Advocate'
             };
 
@@ -2121,6 +2257,7 @@
                     document.getElementById('contactSuccessText').textContent = 'Thank you ' + userName + ', we\u2019ll be in touch within 24 hours.';
                     contactSuccessMsg.style.display = 'block';
                     form.reset();
+                    try { localStorage.setItem(RATE_KEY, String(Date.now())); } catch (e) {}
                 } else {
                     contactErrorMsg.style.display = 'block';
                 }
@@ -2151,6 +2288,83 @@
     <style>
     @keyframes spin { to { transform: rotate(360deg); } }
     #insightsForm input:focus { border-color: var(--gold) !important; outline: none; }
+
+    /* ===== DISCLAIMER MODAL ===== */
+    .disclaimer-overlay {
+        position: fixed; inset: 0; z-index: 10000;
+        display: flex; align-items: center; justify-content: center;
+        padding: 24px;
+        background: rgba(6, 13, 24, 0.92);
+        backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+        opacity: 0; visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .disclaimer-overlay.active { opacity: 1; visibility: visible; }
+    .disclaimer-overlay.active .disclaimer-card { transform: translateY(0) scale(1); opacity: 1; }
+    .disclaimer-card {
+        background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        border-radius: 16px;
+        max-width: 560px; width: 100%;
+        max-height: 90vh; overflow-y: auto;
+        padding: 40px 36px;
+        text-align: center;
+        box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        transform: translateY(20px) scale(0.97); opacity: 0;
+        transition: transform 0.45s cubic-bezier(0.4,0,0.2,1), opacity 0.45s ease;
+    }
+    .disclaimer-logo { margin-bottom: 18px; display: flex; justify-content: center; }
+    .disclaimer-firm {
+        font-family: var(--font-heading);
+        font-size: 1.4rem; font-weight: 600; color: var(--primary);
+        letter-spacing: 1.5px; line-height: 1.2; margin-bottom: 4px;
+    }
+    .disclaimer-firm span { color: var(--gold); }
+    .disclaimer-tagline {
+        font-size: 0.78rem; letter-spacing: 4px; text-transform: uppercase;
+        color: var(--gray-600); margin-bottom: 24px;
+    }
+    .disclaimer-body {
+        text-align: left; font-size: 0.82rem; line-height: 1.7; color: var(--gray-700);
+        max-height: 230px; overflow-y: auto; padding-right: 6px;
+        border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200);
+        padding: 18px 6px; margin-bottom: 24px;
+    }
+    .disclaimer-body p { margin-bottom: 12px; }
+    .disclaimer-body p:last-child { margin-bottom: 0; }
+    .disclaimer-check {
+        display: flex; align-items: flex-start; gap: 10px;
+        text-align: left; cursor: pointer; margin-bottom: 22px;
+        font-size: 0.85rem; color: var(--gray-700); line-height: 1.5;
+    }
+    .disclaimer-check input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--gold); flex-shrink: 0; cursor: pointer; }
+    .disclaimer-proceed {
+        width: 100%; padding: 14px; border: none; border-radius: 8px;
+        background: var(--gold); color: var(--primary);
+        font-family: var(--font-body); font-size: 0.92rem; font-weight: 600;
+        letter-spacing: 0.5px; cursor: pointer;
+        transition: var(--transition);
+    }
+    .disclaimer-proceed:hover:not(:disabled) { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,168,76,0.4); }
+    .disclaimer-proceed:disabled { background: var(--gray-300); color: var(--gray-600); cursor: not-allowed; opacity: 0.6; }
+    @media (max-width: 480px) {
+        .disclaimer-card { padding: 28px 20px; }
+        .disclaimer-firm { font-size: 1.15rem; }
+        .disclaimer-body { font-size: 0.78rem; max-height: 200px; }
+    }
+
+    /* ===== Reduced motion / mobile performance ===== */
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+        }
+        .reveal { opacity: 1; transform: none; }
+    }
+    @media (max-width: 768px) {
+        .hero-photo, .about-photo-placeholder { animation: none !important; }
+        .reveal { transition-duration: 0.3s !important; }
+    }
     </style>
 </body>
 </html>
