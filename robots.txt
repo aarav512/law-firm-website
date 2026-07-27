@@ -1,5 +1,4 @@
-# Robots.txt for Saurav Sharma, Advocate
-# PLACEHOLDER DOMAIN: Replace with your real domain before going live
+# Robots.txt for stalwartslawyer.in
 
 User-agent: *
 Allow: /
@@ -13,5 +12,4 @@ Disallow: /*.log$
 Disallow: /*.bak$
 Disallow: /*.backup$
 
-# Sitemap location (update with real domain)
-Sitemap: https://www.sauravsharmadvocate.com/sitemap.xml
+Sitemap: https://stalwartslawyer.in/sitemap.xml
