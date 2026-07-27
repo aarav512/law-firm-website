@@ -680,6 +680,49 @@
             }
         }
 
+        /* ===== ABOUT HERO (replaces hero + about) ===== */
+        .about-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            overflow: hidden;
+        }
+        .about-hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .about-hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .about-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10,22,40,0.88) 0%, rgba(10,22,40,0.78) 50%, rgba(10,22,40,0.85) 100%);
+        }
+        .about-hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        .about-hero-content .section-label {
+            margin-bottom: 12px;
+        }
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 100px 0 60px;
+                min-height: auto;
+            }
+            .about-hero-content p {
+                font-size: 0.95rem !important;
+            }
+        }
+
         /* ===== PRACTICE AREAS ===== */
         .practice-grid {
             display: grid;
@@ -1404,7 +1447,7 @@
     <!-- ===== HEADER / NAVIGATION ===== -->
     <header class="header" id="header">
         <div class="container header-inner">
-            <a href="#home" class="logo">Stalwart <span>|</span> Lawyers</a>
+            <a href="#home" class="logo">Stalwart Lawyers <span>&amp;</span> Solicitors</a>
             <nav class="nav">
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
@@ -1458,50 +1501,28 @@
     </div>
 
     <main>
-        <!-- ===== HERO SECTION ===== -->
-        <section class="hero" id="home">
-            <div class="container hero-inner">
-                <div class="hero-content">
-                    <p class="hero-label">Stalwart Lawyers &amp; Solicitors &bull; Delhi</p>
-                    <h1>Trusted Legal Counsel.<br>Strategic Advocacy.</h1>
-                    <p class="hero-subtitle">Full-Service Law Firm | Corporate, Civil, Criminal &amp; Regulatory Law</p>
-                    <div class="hero-glass">
-                        <p>A distinguished Delhi-based full-service law firm providing comprehensive legal solutions through a single, trusted platform.</p>
-                    </div>
-                    <div class="hero-ctas">
-                        <a href="tel:+919999046369" class="btn btn-gold">📞 Call Now</a>
-                        <a href="https://wa.me/919999046369" target="_blank" rel="noopener" class="btn btn-outline">💬 WhatsApp</a>
-                        <a href="#contact" class="btn btn-outline">✉️ Contact Us</a>
-                    </div>
-                </div>
+        <!-- ===== ABOUT US (HERO) ===== -->
+        <section class="about-hero" id="home">
+            <div class="about-hero-bg">
+                <img src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="" aria-hidden="true">
+                <div class="about-hero-overlay"></div>
             </div>
-        </section>
-
-        <!-- ===== ABOUT US ===== -->
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="about-content reveal" style="max-width:1100px;margin:0 auto;">
-                    <p class="section-label">About Us</p>
-                    <h2 class="section-title">About Stalwart Lawyers</h2>
-                    <div style="margin-top:40px;display:grid;grid-template-columns:1fr 400px;gap:48px;align-items:center;">
-                        <div style="display:flex;flex-direction:column;gap:22px;">
-                            <p style="font-size:1.02rem;line-height:1.8;color:var(--gray-700);"><strong>Stalwart Lawyers</strong> is a distinguished Delhi-based full-service law firm founded by <strong>Adv. Saurav Sharma</strong> with the vision of providing comprehensive legal solutions through a single, trusted platform. Guided by a commitment to excellence, integrity, and client-focused service, the firm combines legal expertise with practical commercial insight to deliver effective and strategic legal counsel.</p>
-                            <p style="font-size:1.02rem;line-height:1.8;color:var(--gray-700);">Our multidisciplinary team advises and represents individuals, businesses, start-ups, and corporate organizations across a broad spectrum of legal practice, including <strong>Civil Law, Criminal Law, Corporate &amp; Commercial Law, Company Law, Insolvency &amp; Bankruptcy, Banking &amp; Finance, Securities Laws, FEMA, Taxation, Regulatory Compliance, Documentation, and Dispute Resolution.</strong> We also serve clients operating in sectors such as <strong>Real Estate, Retail, Logistics, Hospitality, Information Technology, E-Commerce, and Emerging Enterprises.</strong></p>
-                            <p style="font-size:1.02rem;line-height:1.8;color:var(--gray-700);">At <strong>Stalwart Lawyers</strong>, we believe every client deserves practical, transparent, and solution-oriented legal representation. By understanding each client's unique objectives and challenges, we develop tailored legal strategies that safeguard interests, ensure regulatory compliance, and support sustainable growth. Our dedication to professionalism, responsiveness, and ethical practice has earned us the trust of clients seeking reliable legal guidance in an evolving business and regulatory landscape.</p>
-                        </div>
-                        <div style="position:relative;aspect-ratio:3/4;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-xl);">
-                            <img src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Stalwart Lawyers &amp; Solicitors - Professional Law Firm" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                            <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,22,40,0.5));"></div>
-                            <div style="position:absolute;bottom:24px;left:24px;right:24px;">
-                                <p style="color:var(--white);font-family:var(--font-heading);font-size:1.1rem;font-weight:600;">Stalwart Lawyers &amp; Solicitors</p>
-                                <p style="color:rgba(255,255,255,0.8);font-size:0.82rem;margin-top:4px;">Delhi &bull; Full-Service Law Firm</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-social">
-                        <a href="https://www.instagram.com/advocate_saurav_delhihighcourt" target="_blank" rel="noopener">📷 Instagram</a>
-                        <a href="https://www.linkedin.com/in/saurav-sharma-advocate" target="_blank" rel="noopener">💼 LinkedIn</a>
-                    </div>
+            <div class="container about-hero-content reveal">
+                <p class="section-label" style="color:var(--gold);">About Us</p>
+                <h2 class="section-title" style="color:var(--white);margin-bottom:32px;">About Stalwart Lawyers</h2>
+                <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:24px;">
+                    <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.92);"><strong style="color:var(--white);">Stalwart Lawyers</strong> is a distinguished Delhi-based full-service law firm founded by <strong style="color:var(--white);">Adv. Saurav Sharma</strong> with the vision of providing comprehensive legal solutions through a single, trusted platform. Guided by a commitment to excellence, integrity, and client-focused service, the firm combines legal expertise with practical commercial insight to deliver effective and strategic legal counsel.</p>
+                    <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.92);">Our multidisciplinary team advises and represents individuals, businesses, start-ups, and corporate organizations across a broad spectrum of legal practice, including <strong style="color:var(--white);">Civil Law, Criminal Law, Corporate &amp; Commercial Law, Company Law, Insolvency &amp; Bankruptcy, Banking &amp; Finance, Securities Laws, FEMA, Taxation, Regulatory Compliance, Documentation, and Dispute Resolution.</strong> We also serve clients operating in sectors such as <strong style="color:var(--white);">Real Estate, Retail, Logistics, Hospitality, Information Technology, E-Commerce, and Emerging Enterprises.</strong></p>
+                    <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.92);">At <strong style="color:var(--white);">Stalwart Lawyers</strong>, we believe every client deserves practical, transparent, and solution-oriented legal representation. By understanding each client's unique objectives and challenges, we develop tailored legal strategies that safeguard interests, ensure regulatory compliance, and support sustainable growth. Our dedication to professionalism, responsiveness, and ethical practice has earned us the trust of clients seeking reliable legal guidance in an evolving business and regulatory landscape.</p>
+                </div>
+                <div class="hero-ctas" style="margin-top:40px;justify-content:center;">
+                    <a href="tel:+919999046369" class="btn btn-gold">📞 Call Now</a>
+                    <a href="https://wa.me/919999046369" target="_blank" rel="noopener" class="btn btn-outline">💬 WhatsApp</a>
+                    <a href="#contact" class="btn btn-outline">✉️ Contact Us</a>
+                </div>
+                <div class="about-social" style="margin-top:32px;justify-content:center;">
+                    <a href="https://www.instagram.com/advocate_saurav_delhihighcourt" target="_blank" rel="noopener">📷 Instagram</a>
+                    <a href="https://www.linkedin.com/in/saurav-sharma-advocate" target="_blank" rel="noopener">💼 LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -1530,10 +1551,7 @@
 
                     <!-- SENIOR ASSOCIATE - SHYAM SUNDER -->
                     <article class="team-member reveal">
-                        <div class="team-member-photo">
-                            <img src="public/images/team/WhatsApp_Image_2026-07-26_at_8.13.21_PM.jpeg" alt="Adv. Shyam Sunder Aggarwal, Senior Associate">
-                        </div>
-                        <div class="team-member-info">
+                        <div class="team-member-info" style="grid-column: 1 / -1;">
                             <h3>Adv. Shyam Sunder Aggarwal</h3>
                             <p class="team-member-role">Senior Associate | 8+ Years of Experience</p>
                             <p class="team-member-bio">Adv. Shyam Sunder Aggarwal is an accomplished litigation lawyer with extensive experience in criminal defence, trial advocacy, and dispute resolution. He regularly represents clients before <strong>Trial Courts, Sessions Courts, High Courts,</strong> and other judicial forums in a wide range of criminal and contentious matters. His practice is distinguished by meticulous legal research, strategic case management, and persuasive courtroom advocacy. Committed to protecting his clients' interests, he delivers practical, ethical, and effective legal representation tailored to the complexities of each matter.</p>
@@ -2025,7 +2043,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#home" class="logo">Stalwart <span>|</span> Lawyers</a>
+                    <a href="#home" class="logo">Stalwart Lawyers <span>&amp;</span> Solicitors</a>
                     <p>Stalwart Lawyers &amp; Solicitors is a Delhi-based full-service law firm providing strategic legal representation in corporate, civil, criminal, and regulatory matters before the High Courts, NCLT, RERA, DRT, and other judicial forums across India.</p>
                     <div class="contact-social">
                         <a href="https://www.linkedin.com/in/saurav-sharma-advocate" target="_blank" rel="noopener" aria-label="LinkedIn">
